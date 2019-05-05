@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: d607bd70c737cd141a73e138f92e8a12
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - motionBlurShader: {fileID: 4800000, guid: 21fb656a5248dec46be7b730a196ef76, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
