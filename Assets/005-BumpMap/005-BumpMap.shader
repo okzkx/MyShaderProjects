@@ -61,7 +61,7 @@
 			//fixed3 tangentNormal;
 			//    tangentNormal.xy = (bumpNormal.xy * 2 - 1)*_BumpScale;
 			//	tangentNormal.z = sqrt(1 - saturate(dot(bumpNormal.xy,bumpNormal.xy)));
-			fixed3 tangentNormal = UnpackNormal(packednormal) * _BumpScale;
+				fixed3 tangentNormal = UnpackNormal(packednormal) * _BumpScale;
 
 				fixed3 albedo = tex2D(_MainTex, i.uv);
 				//漫反射半兰伯特模型

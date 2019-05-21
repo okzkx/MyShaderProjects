@@ -60,12 +60,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaScale: 1
+    - _AlphaScale: 0.168
     - _BumpScale: 1
-    - _Cutoff: 0.305
+    - _Cutoff: 0.445
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Gloss: 30
+    - _Gloss: 82
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

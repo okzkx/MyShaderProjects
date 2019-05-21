@@ -363,7 +363,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -422,9 +422,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   briSatConShader: {fileID: 4800000, guid: 2fa1e3d5c7c202242b0726b31f445669, type: 3}
-  brightness: 0.88
-  saturation: 0.85
-  contrast: 1
+  brightness: 0.95
+  saturation: 2.52
+  contrast: 2.57
 --- !u!1 &1614280612
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,8 +459,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 608.9, y: 278.4}
-  m_SizeDelta: {x: 640.2, y: 458.8}
+  m_AnchoredPosition: {x: 597, y: 320}
+  m_SizeDelta: {x: 688.9, y: 387.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614280614
 MonoBehaviour:

@@ -422,10 +422,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloomShader: {fileID: 4800000, guid: a3418a67a49c3b74db32304b340b2507, type: 3}
-  iterations: 2
-  blurSpread: 1.4
-  downSample: 3
-  luminanceThreshold: 0.38
+  iterations: 3
+  blurSpread: 1.47
+  downSample: 5
+  luminanceThreshold: 0.15
 --- !u!1 &1614280612
 GameObject:
   m_ObjectHideFlags: 0

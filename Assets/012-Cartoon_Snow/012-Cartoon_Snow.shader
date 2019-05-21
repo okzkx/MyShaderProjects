@@ -179,7 +179,6 @@
 				if(_SnowLevel>0){
 					fixed snowLevel = dot( i.worldNormal, _SnowDir);
 					snowLevel -= (1 - _SnowLevel);
-					//snowLevel = max(snowLevel,0);
 					snowLevel = saturate(snowLevel);
 
 					snowLevel /= _SnowLevel;

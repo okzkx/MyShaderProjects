@@ -71,15 +71,15 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutLineScale: 0.0035
+    - _OutLineScale: 0
     - _Parallax: 0.02
-    - _RimScale: 3.43
+    - _RimScale: 2.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SpecularScale: 1
     - _SrcBlend: 1
-    - _Steps: 5
-    - _ToonEffect: 0.5
+    - _Steps: 8.6
+    - _ToonEffect: 0.709
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:

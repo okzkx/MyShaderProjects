@@ -10,6 +10,7 @@ Shader "Unity Shaders Book/Chapter 15/Water Wave" {
 		_WaveXSpeed ("Wave Horizontal Speed", Range(-0.1, 0.1)) = 0.01
 		_WaveYSpeed ("Wave Vertical Speed", Range(-0.1, 0.1)) = 0.01
 		_Distortion ("Distortion", Range(0, 100)) = 10
+		_Fresnel("_Fresnel",Range(0,1)) = 0.5
 	}
 	SubShader {
 		// We must be transparent, so other objects are drawn before this one.
@@ -43,6 +44,7 @@ Shader "Unity Shaders Book/Chapter 15/Water Wave" {
 			float _Distortion;	
 			sampler2D _RefractionTex;
 			float4 _RefractionTex_TexelSize;
+			float _Fresnel;
 			
 			struct a2v {
 				float4 vertex : POSITION;
@@ -102,7 +104,7 @@ Shader "Unity Shaders Book/Chapter 15/Water Wave" {
 				fixed3 reflDir = reflect(-viewDir, bump);
 				fixed3 reflCol = texCUBE(_Cubemap, reflDir).rgb * texColor.rgb * _Color.rgb;
 				
-				fixed fresnel = pow(1 - saturate(dot(viewDir, bump)), 4);
+				fixed fresnel = _Fresnel+(1-_Fresnel)* pow(1 - saturate(dot(viewDir, bump)), 5);
 				fixed3 finalColor = reflCol * fresnel + refrCol * (1 - fresnel);
 				
 				return fixed4(finalColor, 1);
