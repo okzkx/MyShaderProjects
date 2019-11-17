@@ -1,6 +1,4 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 12/Edge Detection" {
+Shader "MyShaders/015-EdgeDetection" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_EdgeOnly ("Edge Only", Float) = 1.0

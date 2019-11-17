@@ -1,7 +1,5 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 15/Water Wave" {
+﻿
+Shader "MyShaders/025-WaterWave" {
 	Properties {
 		_Color ("Main Color", Color) = (0, 0.15, 0.115, 1)
 		_MainTex ("Base (RGB)", 2D) = "white" {}

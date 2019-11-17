@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 12/Bloom" {
+﻿Shader "MyShaders/017-Bloom" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_Bloom ("Bloom (RGB)", 2D) = "black" {}

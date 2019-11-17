@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 13/Motion Blur With Depth Texture" {
+﻿Shader "MyShaders/026-MotionBlurWithDepthTexture" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_BlurSize ("Blur Size", Float) = 1.0

@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 13/Fog With Depth Texture" {
+﻿Shader "MyShaders/027-FogWithDepthTexture" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_FogDensity ("Fog Density", Float) = 1.0

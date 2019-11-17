@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.501957, g: 0.40525463, b: 0.27719784, a: 1}
+  m_IndirectSpecularColor: {r: 0.21264777, g: 0.13447388, b: 0.061574727, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -203,7 +203,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 354198794248843da8555877937ee568, type: 3}
       propertyPath: m_Name
-      value: Teapot (2)
+      value: 020-Fresnel
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 354198794248843da8555877937ee568, type: 3}
       propertyPath: m_LocalPosition.x
@@ -355,7 +355,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 354198794248843da8555877937ee568, type: 3}
       propertyPath: m_Name
-      value: Teapot
+      value: 020-Reflection
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 354198794248843da8555877937ee568, type: 3}
       propertyPath: m_LocalPosition.x
@@ -485,7 +485,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 354198794248843da8555877937ee568, type: 3}
       propertyPath: m_Name
-      value: Teapot (1)
+      value: 020-Refraction
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 354198794248843da8555877937ee568, type: 3}
       propertyPath: m_LocalPosition.x

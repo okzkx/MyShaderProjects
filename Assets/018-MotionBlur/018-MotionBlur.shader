@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 12/Motion Blur" {
+﻿Shader "MyShaders/018-MotionBlur" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_BlurAmount ("Blur Amount", Float) = 1.0

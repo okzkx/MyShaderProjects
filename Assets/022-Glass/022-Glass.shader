@@ -1,7 +1,4 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 10/Glass Refraction" {
+﻿Shader "MyShaders/022-Glass" {
 	Properties {
 		_MainTex ("Main Tex", 2D) = "white" {}
 		_BumpMap ("Normal Map", 2D) = "bump" {}

@@ -74,7 +74,7 @@ Material:
     - _OutLineScale: 0.007
     - _Parallax: 0.02
     - _RimScale: 0.36
-    - _ShadowPower: 1
+    - _ShadowPower: 0.663
     - _SmoothnessTextureChannel: 0
     - _SnowLevel: 0.369
     - _SnowRim: 3

@@ -1,6 +1,5 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 10/Mirror" {
+﻿
+Shader "MyShaders/021-Mirror" {
 	Properties {
 		_MainTex ("Main Tex", 2D) = "white" {}
 	}

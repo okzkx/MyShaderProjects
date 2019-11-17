@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 12/Brightness Saturation And Contrast" {
+﻿Shader "MyShaders/014-BrightnessSaturationAndContrast" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_Brightness ("Brightness", Float) = 1

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FresnelMat
-  m_Shader: {fileID: 4800000, guid: 150f5defc4cec20489f6798437d9bcf8, type: 3}
+  m_Name: 020-Refraction
+  m_Shader: {fileID: 4800000, guid: e8d7a914aeb605644851392785541d1c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -64,7 +64,6 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FresnelScale: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

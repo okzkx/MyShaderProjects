@@ -1,7 +1,4 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Unity Shaders Book/Chapter 15/Dissolve" {
+﻿Shader "MyShaders/024-Dissolve" {
 	Properties {
 		_BurnAmount ("Burn Amount", Range(0.0, 1.0)) = 0.0
 		_LineWidth("Burn Line Width", Range(0.0, 0.2)) = 0.1
