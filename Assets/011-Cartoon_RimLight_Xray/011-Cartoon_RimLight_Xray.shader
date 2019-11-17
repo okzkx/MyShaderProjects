@@ -1,4 +1,4 @@
-﻿Shader "Unlit/011-Cartoon_Xray"
+﻿Shader "MyShaders/011-Cartoon_RimLight_Xray"
 {
 	Properties
 	{
@@ -11,8 +11,6 @@
 		_XRayColor("XRayColor",COLOR) = (0,0,1,1)
 		_XRayScale("_XRayPower",Range(0,3)) = 1
 
-		_OutLineScale("OutLine Scale",Range(0,0.05)) =0.002
-		_OutLineColor("OutLine Color",Color) = (0,0,0,1)
 	}
 	SubShader
 	{
@@ -59,48 +57,6 @@
 				 
 			}
 			ENDCG
-		}
-
-		Pass {
-			Name "OutLine"
-			Cull Front
-
-			CGPROGRAM
-			#pragma vertex vert
-			#pragma fragment frag
-			#include "UnityCG.cginc"
-			#include "Lighting.cginc"
-
-			fixed _OutLineScale;
-			fixed3 _OutLineColor;
-
-			struct v2f{
-				float4 vertex : SV_POSITION;
-			}
-			;
-			v2f vert(appdata_base v) {
-				v2f o;
-				//局部空间(世界空间同样的原理)边缘沿法线拓展,:效果不好
-				//fixed3 vertex = v.normal * _OutLineScale + v.vertex;
-				//o.vertex = UnityObjectToClipPos(vertex);
-
-				//裁剪空间沿法线拓展
-				fixed4 vertex_clip = UnityObjectToClipPos(v.vertex);
-				fixed3 normal_view = normalize(mul((float3x3)UNITY_MATRIX_IT_MV,v.normal));
-				fixed3 normal_clip = TransformViewToProjection(normal_view);
-				o.vertex = vertex_clip;
-				o.vertex.xy += normal_clip * _OutLineScale;
-				return o;
-			}
-			fixed4 frag(v2f i) : SV_Target
-			{
-				return fixed4(_OutLineColor,1);
-			}
-
-
-			ENDCG
-
-		
 		}
 
 		Pass

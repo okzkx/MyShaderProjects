@@ -1,4 +1,4 @@
-﻿Shader "Unlit/009-Cartoon"
+﻿Shader "MyShaders/009-Cartoon_Outline"
 {
 	Properties
 	{
@@ -13,8 +13,9 @@
 		Tags { "Queue" = "Geometry" "RenderType" = "Opaque"}
 		LOD 100
 
+		// 先渲染 边缘
 		Pass {
-			Name "OutLine"
+			Name "Outline"
 			Cull Front
 
 			CGPROGRAM
@@ -55,6 +56,7 @@
 		
 		}
 
+		//在渲染物体
 		Pass
 		{
 			Name "Lighting"
